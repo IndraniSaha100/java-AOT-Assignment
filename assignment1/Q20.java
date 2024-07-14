@@ -2,29 +2,6 @@
  20. Write a Java Program to check the perfect number.
 
  21. Write a Java Program to check Armstrong number.
-
- 22. Write a Java Program to convert a binary number to octal number.
-
- 23. Write a Java Program to display the sequence ABA, BCB, CDC, DED,……..
-
- 24. Write a Java Program to display the sequence AMM, COO, EQQ ,..........
-
- 25. Write a Java Program to display the sequence A1, B2, C3, ...., …Y25,Z26, A1, B2,...............
-
- 26. Create a Java program that performs a fun mathematical operation using loops. Ask the user for a number and 
- then apply the following operation until the result becomes a single-digit number: Multiply each digit of the 
- number and repeat the process. Output each intermediate result. 
-(Test Cases,
- I/P: 721 
- O/P: 
- Intermediate result: 14 
- Intermediate result: 4 
- Final result: 4 
-
-I/P: 123 
-O/P: 
-Intermediate result: 6 
-Final result: 6).
  */
 import java.util.Scanner;
 class Perfect{
