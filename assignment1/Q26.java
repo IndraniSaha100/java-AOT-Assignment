@@ -14,8 +14,31 @@ I/P: 123
 O/P: 
 Intermediate result: 6 
 Final result: 6).
+
+ 27. Write a function that returns the second last digit of the given number. (For example, if the given number is 197, the second last digit is 9)
+
+Note1 - The second last digit should be returned as a positive number, i.e. if the given number is -197, the 
+second last digit is 9. 
+Note2 - If the given number is a single digit number, then the second last digit does not exist. In such cases, 
+the function should return -1.) 
+
+ 
  */
 import java.util.Scanner;
+class SecondLastDigit{
+    // #27
+    public int secondLastDigit(int num){
+        num%=100;
+        int value=num/10;
+        if(value<0){
+            return -value;
+        }
+        if(value==0){
+            return -1;
+        }
+        return value;
+    }
+}
 public class Q26 {
     public static void main(String[] args) {
 
@@ -40,7 +63,13 @@ public class Q26 {
         }
         System.out.println("Final result:"+number);
         
+        // #27
+        //#27
+        System.out.println("Enter the number");
+        int num=inp.nextInt();
         
+        SecondLastDigit sd=new SecondLastDigit();
+        System.out.println("The second last digit is "+sd.secondLastDigit(num));
         
         inp.close();
     }
