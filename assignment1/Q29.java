@@ -22,11 +22,10 @@ I/P: -6 O/P: ERROR ).
 31. Write a java program that simulates a basic number guessing game. The computer randomly selects a target 
 number between 1 and 100, and the player has to guess the correct number within a limited number of attempts.
  */
-
 import java.util.Scanner;
 import java.util.Random;
 
-class Palindrome{
+class Palindromeee{
     private int reverseNummber(int userInput){
         int reverseInput=0;
             while(userInput!=0){
@@ -44,7 +43,7 @@ class Palindrome{
             return false;
     }
     //#29
-    public void makePalindrome(int num){
+    public void makePalindromeGame(int num){
         if(checkPalindrome(num))
         {
             System.out.println("Final result:"+num);
@@ -70,8 +69,8 @@ public class Q29 {
     //#29
     System.out.println("Enter the number for making it palindrome");
     int number=inp.nextInt();
-    Palindrome p1=new Palindrome();
-    p1.makePalindrome(number);
+    Palindromeee p1=new Palindromeee();
+    p1.makePalindromeGame(number);
 
     // #30
     System.out.println("Enter number:");
@@ -111,7 +110,7 @@ public class Q29 {
             s="Quit";
         }
         attempt++;
-    } while (s!="Quit");
+    } while (!s.equals("Quit"));
     
     inp.close();
     }
